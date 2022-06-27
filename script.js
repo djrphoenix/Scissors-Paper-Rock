@@ -18,12 +18,13 @@ function computerPlay() {
 }
 
 function round(playerSelection, computerSelection) {
+    let player = playerSelection.toLowerCase();
+    let computer = computerSelection.toLowerCase();
 
-    if (playerSelection === 'rock' && computerSelection == 'rock') {
+    if (player === 'rock' && computer == 'rock') {
         console.log('Draw. You both picked Rock');
     } else if (playerSelection == 'paper' && computerSelection == 'paper') {
-        console.log('Draw. Ypu both picked Paper');
-    } else if (playerSelection == 'scissors' && computerSelection == 'scissors') {
-        console.log('Draw. You both picked Scissors')
-    }
+        console.log('Draw. You both picked Paper');
+    } else if (playerSelection == 'scissors' && computerSelection == 'scissors')
+        console.log('Draw. You both picked Scissors');
 }
